@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Page</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Admin Page</h1>
+    
+    <!-- Candidate Information Form -->
+    <form method="POST" action="/generate_url">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <br>
+        <label for="job_role">Job Role:</label>
+        <input type="text" id="job_role" name="job_role" required>
+        <br>
+        <label for="years_of_experience">Years of Experience:</label>
+        <input type="number" id="years_of_experience" name="years_of_experience" required>
+        <br>
+        <button type="submit">Generate URL</button>
+    </form>
+</body>
+</html>

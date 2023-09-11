@@ -1,0 +1,24 @@
+/* styles.css */
+/* CSS for your login page */
+
+/* Style for the header/logo */
+.header {
+    position: relative;
+}
+
+.logo {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px; /* Adjust as needed */
+}
+
+/* Style for the content */
+.content {
+    text-align: center;
+    margin-top: 100px; /* Adjust as needed */
+}
+
+h1 {
+    font-size: 24px;
+}

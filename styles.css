@@ -1,0 +1,13 @@
+/* styles.css */
+
+/* Style for the header/logo */
+.header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.logo {
+    max-width: fit-content
+}

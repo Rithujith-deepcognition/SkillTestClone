@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Skill Test Page</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Skill Test</h1>
+    
+    <form method="POST" action="/skill-test/{{ name }}-{{ job_role }}-{{ years_of_experience }}">
+        {% for question in questions %}
+        <div class="question">
+            <p>{{ question['question_text'] }}</p>
+            <ul>
+                <li>
+                    <input type="radio" name="question_{{ question['id'] }}" value="a">
+                    {{ question['a'] }}
+                </li>
+                <li>
+                    <input type="radio" name="question_{{ question['id'] }}" value="b">
+                    {{ question['b'] }}
+                </li>
+                <li>
+                    <input type="radio" name="question_{{ question['id'] }}" value="c">
+                    {{ question['c'] }}
+                </li>
+                <li>
+                    <input type="radio" name="question_{{ question['id'] }}" value="d">
+                    {{ question['d'] }}
+                </li>
+            </ul>
+        </div>
+        {% endfor %}
+        <button type="submit">Submit Answers</button>
+    </form>
+</body>
+</html>
